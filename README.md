@@ -20,7 +20,7 @@ git clone git@github.com:JunNagashima/Laravel_todo.git
 
 データベースは`laravel_todo`で作成する。
 
-### Laravelの.envファイルを修正する
+### Laravelの.envファイルを作成し下記を記入
 ```
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
@@ -40,7 +40,7 @@ php artisan migrate
 ```
 php artisan db:seed
 ```
-先程作成したテーブル(todoテーブル)にデータが入ってるか確認する。
+先程作成したテーブル(todoテーブル)にデータが入ってるかphpMyAdminで確認する。
 
 ### Laravelプロジェクトを開く
 
