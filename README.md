@@ -1,6 +1,8 @@
 # Laravel Todo
 
-### Laravel Todoのプロジェクトをクローンする。
+URL：https://laravel-todo-nine.vercel.app/
+
+### Laravel Todo のプロジェクトをクローンする。
 
 ```
 git clone git@github.com:JunNagashima/Laravel_todo.git
@@ -9,18 +11,20 @@ git clone git@github.com:JunNagashima/Laravel_todo.git
 ### MAMP のルートフォルダの設定を変更する
 
 #### 手順
+
 1. MAMP の設定(Preferences)を開く
-2. Serverタブを開く
-3. Document rootをクローンしたLaravelプロジェクトのpublicディレクトリを選択する
-`例:Desctop\Laravel_todo\public`
+2. Server タブを開く
+3. Document root をクローンした Laravel プロジェクトの public ディレクトリを選択する
+   `例:Desctop\Laravel_todo\public`
 
 ### MAMP の起動
 
-### phpMyAdminにログインしてDBを作成する
+### phpMyAdmin にログインして DB を作成する
 
 データベースは`laravel_todo`で作成する。
 
-### Laravelの.envファイルを作成し下記を記入
+### Laravel の.env ファイルを作成し下記を記入
+
 ```
 APP_NAME=Laravel
 APP_ENV=local
@@ -85,19 +89,23 @@ VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 ```
 
-### migrateコマンドを入力する
+### migrate コマンドを入力する
+
 ```
 php artisan migrate
 ```
-正常に終了したらphpMyAdminでテーブルが作成されているか確認する。
+
+正常に終了したら phpMyAdmin でテーブルが作成されているか確認する。
 
 ### テストデータのインサート
+
 ```
 php artisan db:seed
 ```
-先程作成したテーブル(todoテーブル)にデータが入ってるかphpMyAdminで確認する。
 
-### Laravelプロジェクトを開く
+先程作成したテーブル(todo テーブル)にデータが入ってるか phpMyAdmin で確認する。
 
-1. MAMPのWebStartからwebページを開く
-2. ページの右上のMyWebsiteボタンを押す
+### Laravel プロジェクトを開く
+
+1. MAMP の WebStart から web ページを開く
+2. ページの右上の MyWebsite ボタンを押す
